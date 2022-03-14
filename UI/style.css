@@ -52,3 +52,14 @@ nav button{
 .intro p{
     color: gray;
 }
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 50px 0;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+}
