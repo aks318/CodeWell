@@ -3,6 +3,11 @@
     background-color: black;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+p {
+    color: rgb(97, 95, 95);
 }
 
 nav {
@@ -43,14 +48,10 @@ nav button{
     width: 50%;
 }
 
-.intro h1{
+.intro h1 , .about h1{
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 10px;
-}
-
-.intro p{
-    color: gray;
 }
 
 .logo{
@@ -59,7 +60,31 @@ nav button{
     margin: 50px 0 50px 0;
 }
 
-.images{
+.about{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about .image{
+    max-width: 530px;
+}
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 110px 20px 110px;
+    background-color: rgb(97, 95, 95);
+}
+
+.article .left, .right{
+    max-width : 530px;
+    background-color: rgb(97, 95, 95);
+}
+
+.left p, .left h1 , .right p {
+    background-color: rgb(97, 95, 95);
+    color: white;
+    margin-top: 20px;
 }
