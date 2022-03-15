@@ -30,7 +30,7 @@ nav ul{
     justify-content: space-between;
 }
 
-nav button{
+nav button , .bottom .left button{
     height: 40px;
     width: 120px;
     background-color: rgb(241, 241, 7);
@@ -70,11 +70,12 @@ nav button{
     max-width: 530px;
 }
 
-.article{
+.article , .footer{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 20px 110px 20px 110px;
+    width: 100vw;
+    padding: 20px 127px;
+    margin: 0 -127px;
     background-color: rgb(97, 95, 95);
 }
 
@@ -83,8 +84,41 @@ nav button{
     background-color: rgb(97, 95, 95);
 }
 
-.left p, .left h1 , .right p {
+.article .left p, .article .left h1 , .article .right p {
     background-color: rgb(97, 95, 95);
     color: white;
-    margin-top: 20px;
+    margin: 20px 0;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .left{
+    width: 530px;
+    margin: 30px 0;
+}
+
+.bottom .left p{
+    margin: 30px 0px;
+}
+
+.bottom .left button{margin-bottom: 30px;}
+
+.footer h1{
+    font-weight: 500;
+    font-size: 27px;
+    background-color: rgb(97, 95, 95);
+}
+
+.social-icon{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(97, 95, 95);
+}
+
+.social-icon img{
+    background-color: rgb(97, 95, 95);
 }
