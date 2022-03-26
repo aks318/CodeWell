@@ -12,7 +12,6 @@ p{
 }
 
 .container{
-    margin: 0 100px;
     padding: 0 100px 50px 100px;
     background-color: antiquewhite;
 }
@@ -121,11 +120,11 @@ button p{
 }
 
 .features{
-    margin: 50px 100px;
+    margin: 50px 0px;
     padding: 0 100px;
 }
 
-.features h2{
+.features h2, .testimonial h2{
     margin-bottom: 15px;
 }
 
@@ -144,6 +143,51 @@ button p{
     border-radius: 5px;
 }
 
+.testimonial{
+    padding: 50px 100px;
+    background-color: rgb(176, 227, 250);
+}
+
+.testimonial .testi-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial .testi-cards .cards{
+    background-color: #fff;
+    padding: 15px;
+    width: 30%;
+    border: 1px solid gray;
+    height: auto;
+    border-radius: 5px;
+}
+
+.testimonial .testi-cards .cards .intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial .testi-cards .cards .intro .image-name{
+    display: flex;
+}
+
+.testimonial .testi-cards .cards .intro .image-name .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.testimonial .testi-cards .cards .intro p{
+    margin: 0;
+    line-height: .8;
+}
+
+.testimonial .testi-cards .cards .likes-date{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (min-width : 700px) and (max-width : 1000px) {
     .container{
@@ -169,9 +213,15 @@ button p{
     .features .cards .card{
         width: 100%;
     }
+
+    .testimonial .testi-cards .cards{
+        width: 45%;
+        margin: 10px auto;
+        /* justify-content: center; */
+    }
 }
 @media screen and (max-width : 700px) {
-    .container , .features{
+    .container , .features , .testimonial{
         margin: 0;
         padding: 0 30px;
     }
@@ -199,8 +249,15 @@ button p{
     .features{
         margin: 50px 0px;
     }
+    .testimonial{
+        padding: 50px 30px ;
+    }
     .features .cards .card{
         width: 100%;
+    }
+    .testimonial .testi-cards .cards{
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
