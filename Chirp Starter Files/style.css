@@ -23,7 +23,7 @@ p{
     height: 80px;
 }
 
-.navbar .logo{
+.navbar .logo , .footer .logo{
     font-style: italic;
     color: rgb(56, 170, 247);
     font-size: 16px;
@@ -224,6 +224,23 @@ button p{
     justify-content: center;
 }
 
+.footer{
+    padding: 0 100px;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(176, 227, 250);
+}
+
+.footer .terms{
+    display: flex;
+}
+
+.footer .terms h5{
+    margin-left: 10px;
+    font-weight: 500;
+}
 
 @media screen and (min-width : 700px) and (max-width : 1000px) {
     .container{
@@ -294,6 +311,10 @@ button p{
     .testimonial .testi-cards .cards{
         width: 100%;
         margin-bottom: 10px;
+    }
+    .footer{
+        padding: 0;
+        flex-direction: column;
     }
 }
 
