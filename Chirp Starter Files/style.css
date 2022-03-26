@@ -13,7 +13,7 @@ p{
 
 .container{
     margin: 0 100px;
-    padding: 0 100px;
+    padding: 0 100px 50px 100px;
     background-color: antiquewhite;
 }
 
@@ -120,8 +120,32 @@ button p{
     display: none;
 }
 
+.features{
+    margin: 50px 100px;
+    padding: 0 100px;
+}
 
-@media screen and (min-width : 700px) and (max-width : 900px) {
+.features h2{
+    margin-bottom: 15px;
+}
+
+.features .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features .cards .card{
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width : 700px) and (max-width : 1000px) {
     .container{
         margin: 0;
     }
@@ -139,9 +163,15 @@ button p{
     .header .hero .img2{
         display: block;
     }
+    .features{
+        margin: 50px 0px;
+    }
+    .features .cards .card{
+        width: 100%;
+    }
 }
 @media screen and (max-width : 700px) {
-    .container{
+    .container , .features{
         margin: 0;
         padding: 0 30px;
     }
@@ -154,17 +184,23 @@ button p{
     .header{
         flex-direction: column-reverse;
     }
-    .header .header-left h1{
-        font-size: 24px;
-    }
     .header .header-left{
         margin-top: 30px;
         padding: 0;
+    }
+    .header .header-left h1{
+        font-size: 24px;
     }
 
     .header button{
         width: 100%;
         justify-content: center;
+    }
+    .features{
+        margin: 50px 0px;
+    }
+    .features .cards .card{
+        width: 100%;
     }
 }
 
