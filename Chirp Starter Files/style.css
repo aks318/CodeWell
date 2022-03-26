@@ -31,6 +31,10 @@ p{
     font-weight: 700;
 }
 
+.navbar .burger-bar{
+    display: none;
+}
+
 .navbar ul{
     display: flex;
     list-style-type: none;
@@ -84,7 +88,7 @@ button p{
 }
 
 .header .avatars{
-    margin: 10px 0px;
+    margin: 15px 0px;
 }
 
 .header .avatar img {
@@ -104,14 +108,65 @@ button p{
 }
 
 .header .hero{
-    width: 80%;
+    text-align: end;
+    width: 100%;
 }
 
-.header .hero img{
+.header .hero .img{
     width: 100%
 }
+.header .hero .img2{
+    width: 100%;
+    display: none;
+}
 
 
+@media screen and (min-width : 700px) and (max-width : 900px) {
+    .container{
+        margin: 0;
+    }
+    .header{
+        flex-direction: column-reverse;
+    }
+
+    .header .hero{
+        text-align: center;
+    }
+
+    .header .hero .img{
+        display: none;
+    }
+    .header .hero .img2{
+        display: block;
+    }
+}
+@media screen and (max-width : 700px) {
+    .container{
+        margin: 0;
+        padding: 0 30px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar .burger-bar{
+        display: block;
+    }
+    .header{
+        flex-direction: column-reverse;
+    }
+    .header .header-left h1{
+        font-size: 24px;
+    }
+    .header .header-left{
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .header button{
+        width: 100%;
+        justify-content: center;
+    }
+}
 
 
 
