@@ -98,6 +98,13 @@ nav li button{
     margin-top: 10px;
 }
 
+.footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media screen and (max-width : 950px) {
     body{
         padding: 0 10px;
@@ -128,5 +135,8 @@ nav li button{
     }
     nav .bar{
         display: block;
+    }
+    .footer{
+        flex-direction: column;
     }
 }
