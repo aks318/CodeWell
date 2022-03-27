@@ -1,0 +1,35 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 100px;
+}
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+    color: grey;
+}
+
+nav li button{
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
