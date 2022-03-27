@@ -8,11 +8,21 @@ body{
     padding: 0 100px;
 }
 
+p{
+    line-height: 1.5;
+    color: grey;
+    margin: 20px 0;
+}
+
 nav{
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav .bar{
+    display: none;
 }
 
 nav ul{
@@ -32,4 +42,50 @@ nav li button{
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.main-article{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-article > img{
+    max-width: 30%
+}
+
+.main-article .article-content{
+    width: 66%;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 50px;
+}
+
+.user .user-name{
+    margin: 30px 15px ;
+}
+
+.user p{
+    margin: 0;
+    font-size: 12px;
+    line-height: .7;
+}
+
+
+@media screen and (max-width : 700px) {
+    body{
+        padding: 0 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .bar{
+        display: block;
+    }
 }
