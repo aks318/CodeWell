@@ -6,6 +6,10 @@
     font-size: 14px;
 }
 
+body , html{
+    overflow-x: hidden;
+}
+
 p{
     line-height: 1.5;
 }
@@ -33,6 +37,10 @@ nav{
 
 nav .logo{
     font-weight: 600;
+}
+
+nav .hamburger{
+    display: none;
 }
 
 nav .links ul{
@@ -81,7 +89,7 @@ nav .buttons .active{
 }
 
 .home .left h1{
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
@@ -93,6 +101,10 @@ nav .buttons .active{
 
 .home .left .checkpoints p{
     margin-left: 12px;
+}
+
+.home .right .tablet{
+    display: none;
 }
 
 .home .right img{
@@ -213,4 +225,84 @@ footer .links{
     width: 60%;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen  and (max-width: 1000px) {
+    .home{
+        flex-direction: column-reverse;
+        padding: 0 10px 50px 10px
+    }   
+    .home .left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .home .left .checkpoints{
+        justify-content: center;
+    }
+    .home .right .desktop{
+        display: none;
+    }
+    .home .right .tablet{
+        display: block;
+    }
+    .home .right img{
+        width: 100%;
+    }
+
+    .about{
+        flex-direction: column;
+        margin: 0;
+        padding: 50px 10px 50px 10px;
+    } 
+    .about .left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-editor{
+        flex-direction: column-reverse;
+        padding: 50px 10px 50px 10px;
+        margin: 0;
+    } 
+
+    .text-editor .right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-editor .left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 850px){
+    footer{
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+
+    footer .company{
+        width: 100%;
+        margin-bottom: 50PX;
+    }
+
+    footer .links{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    nav {
+        padding: 30px 10px;
+    }
+    nav .links , nav .buttons{
+        display: none;
+    }
+    nav .hamburger{
+        display: block;
+    }
+    footer{
+        padding: 50px 10px;
+    }
 }
