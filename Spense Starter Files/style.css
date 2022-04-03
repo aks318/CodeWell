@@ -111,3 +111,39 @@ nav .buttons .active{
 .logos img{
     width: 8%;
 }
+
+/* About */
+
+.about{
+    margin: 0px 100px;
+    padding: 50px 50px 0 100px;
+    background-color: rgb(232, 227, 221);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .left{
+    width: 50%;
+}
+
+.about .left h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about .left p{
+    margin-top: 10px;
+}
+
+.about .left .link a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+.about .right img{
+    width: 400px;
+}
