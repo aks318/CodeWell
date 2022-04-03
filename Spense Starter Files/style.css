@@ -186,3 +186,31 @@ nav .buttons .active{
     font-weight: 500;
     border-bottom: 1px solid black;
 }
+
+/* Footer */
+
+footer{
+    padding: 50px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h5{
+    color: white;
+}
+
+footer p{
+    margin-top: 8px;
+    color: grey;
+}
+
+footer .company{
+    width: 33%;
+}
+
+footer .links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
