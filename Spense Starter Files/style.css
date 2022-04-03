@@ -98,3 +98,16 @@ nav .buttons .active{
 .home .right img{
     width: 400px;
 }
+
+/* Logos */
+
+.logos{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img{
+    width: 8%;
+}
