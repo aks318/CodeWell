@@ -147,3 +147,42 @@ nav .buttons .active{
 .about .right img{
     width: 400px;
 }
+
+/* text-editor */
+
+.text-editor{
+    margin: 0px 100px;
+    padding: 50px 50px 0 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-editor .left{
+    width: 50%;
+}
+
+.text-editor .left img{
+    width: 100%;
+}
+
+.text-editor .right{
+    width: 50%;
+}
+
+.text-editor .right h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-editor .right p{
+    margin-top: 10px;
+}
+
+.text-editor .right .link a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
