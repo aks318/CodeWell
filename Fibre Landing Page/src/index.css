@@ -106,3 +106,34 @@ nav button{
 .about .hero-img img{
     max-width: 100%;
 }
+
+/* Why */
+
+.why{
+    margin-top: 50px;
+}
+.why p{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(125, 62, 225);
+    margin: 15px 0;
+}
+.why h1{
+    width: 60%;
+    margin-bottom: 30px;
+}
+.why .reasons{
+    display: flex;
+    justify-content: space-between;
+}
+.why .reasons .sub-reason{
+    width: 30%;
+}
+.why .reasons h5{
+    margin: 10px 0;
+}
+.why .reasons p{
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgb(154, 152, 152);
+}
